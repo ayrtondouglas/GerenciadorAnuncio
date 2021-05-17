@@ -1,0 +1,28 @@
+<html>
+	<head>
+	<title> Gerenciador de Anúncios</title>
+	<meta http-equiv = "Content-Type" content="text/html; charset=UTF-8"/>
+	</head>
+	<body>
+	 <a href="insert"> Inserir novo</a><br>
+	 <table>
+		 <tr>
+		     <td>ID</td>
+		     <td>Nome do Anúncio</td>
+		     <td>Cliente</td>
+		     <td>Data de início</td>
+		     <td>Data de término</td>
+		     <td>Valor do investimento R$</td>
+ 		</tr>
+		 <tr th:each="anuncio : ${anuncios}">
+		     <td th:text="${anuncio.id}"></td>
+		     <td th:text="${anuncio.nome}"></td>
+		     <td th:text="${anuncio.cliente}"></td>
+		     <td th:text="${anuncio.dataInicio}"></td>
+		     <td th:text="${anuncio.dataTermino}"></td>
+		     <td th:text="${anuncio.investimentoDia}"></td>
+		 </tr>
+	 </table>
+	</body>
+	
+</html>

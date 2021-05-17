@@ -1,0 +1,39 @@
+<html lang="pt-br">
+<h1> Sistema de controle de anúncios | Cadastro de Anúncios</h1>
+<head>
+<meta charset = "utf8">
+</head>
+
+<body>
+
+<form action="/insert" method="POST" modelAttribute = "anuncio">
+	<label>Nome do anúncio</label>
+	<br>
+	<input type="text" placeHolder= "Nome do anúncio" name="nome">
+	<br><br>
+	
+	<label>Cliente</label>
+	<br>
+	<input type="text" placeHolder= "Nome do cliente" name="cliente">
+	<br><br>
+
+	<label>Data de início</label>
+	<br>
+	<input type="text" placeHolder= "16/05/2021" name="dataInicio">
+	<br><br>
+
+	<label>Data de términco</label>
+	<br>
+	<input type="text" placeHolder= "16/06/2021" name="dataTermino">
+	<br><br>
+	
+	<label>Valor do investimento por dia</label>
+	<br>
+	<input type="number" placeHolder= "100,00" name="investimentoDia">
+	<br><br>
+	
+	<button type="submit" value="Inserir"> Salvar</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+ <head>
+ <title>Listar todos os anúncios</title>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ </head>
+ 	<body th:each="anuncio : ${anuncios}">
+	 <span th:text="${'ID: ' + anuncio.id}"></span><br>
+	 <span th:text="${'Nome do anúncio: ' + anuncio.nome}"></span><br>
+	 <span th:text="${'Cliente: ' + anuncio.cliente }"></span><br>
+	 <span th:text="${'Data de início ' + anuncio.dataInicio }"></span><br>
+	 <span th:text="${'Data de término ' + anuncio.dataTermino }"></span><br>
+	 <span th:text="${'Valor investido R$ ' + anuncio.valorInvestido }"></span><br>
+ 	<br>
+ 	<br>
+ 	</body>
+</html>
